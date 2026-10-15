@@ -1,0 +1,86 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Large \bfseries Team 23: Mapping the Indian Data Analyst Job Market} \\[0.4em]
+    \textbf{Team Members:} Dev Raj Singh (25B0908), Akshit Anand (25B0913), Yash Goutharia (2B1004)
+\end{center}
+
+\vspace{0.5em}
+
+\section*{Background}
+
+The Indian data analytics job market is growing fast, but salary and experience requirements vary widely across regions and platforms. This project explores the main factors affecting salaries and hiring patterns for Data Analyst roles in India using July 2024 job market data.
+
+\section*{The Question}
+\textit{How strongly do tech hubs, required experience, and company ratings predict base salaries for Data Analysts in India, and which skills offer the highest pay?}
+
+\vspace{0.5em}
+\section*{Hypotheses to Test}
+\begin{enumerate}
+    \item \textbf{Location Premium ($H_1$):} Tier-1 tech hubs (such as Bengaluru, Hyderabad, and Pune) offer higher base salaries than non-metro cities, even when accounting for experience.
+    \item \textbf{Experience Return ($H_2$):} Salary growth per year of experience slows down significantly after 6 to 7 years.
+    \item \textbf{Platform \& Brand Effect ($H_3$):} Higher company ratings and specialized hiring platforms relate positively to disclosed salaries and higher minimum experience requirements.
+\end{enumerate}
+
+We will use exploratory data analysis (EDA), statistical testing (ANOVA, regression), and interactive charts to answer these questions.
+
+\vspace{0.5em}
+\textbf{Metadata \& References:}
+\begin{itemize}
+    \item \textbf{Dataset:} 
+    Kaggle Dataset Repository \url{https://www.kaggle.com/datasets/ishaqbasha/data-analyst-job-opening-in-india-7th-july-2024}
+    \item \textbf{Tools:} Python (pandas, scipy.stats, matplotlib, seaborn), Tableau / Power BI, Git/GitHub.
+    \item \textbf{LLM Transcript Link:}
+    \begin{itemize}
+        \item \url{https://gemini.google.com/app/06e9c097cdf886b9}\\
+        \item \url{https://chatgpt.com/share/6acd28a6-f0d8-83e8-abf3-1cbb1b4518d2}
+    \end{itemize}
+
+\end{itemize}
+
+\section*{Logistics}
+
+\textbf{Updated Spreadsheet:} \\
+\url{https://docs.google.com/spreadsheets/d/1wf-e4UMwW0eOMoP4RMkSDTYQT7lU7fUi3SnoRyskhSU/edit?usp=sharing}\\
+
+\vspace{0.5em}
+\textbf{Work Breakup \& Proposed Workflow:}
+\begin{itemize}
+    \item \textbf{Akshit:} Exploratory data analysis and charts (matplotlib / seaborn).
+    \item \textbf{Yash} Statistical testing and modeling (\texttt{scipy.stats} for ANOVA and regression).
+    \item \textbf{Dev:} Interactive dashboarding (Tableau / Power BI) and final report integration.
+\end{itemize}
+
+\textbf{Collaboration Plan:} Discord, GitHub updates and in-person work sessions during weekends.
+
+\subsection*{Tools and Techniques}
+
+\begin{itemize}
+    \item \textbf{Python:} The primary programming language used for data processing, statistical analysis, and visualization.
+    
+    \item \textbf{Pandas:} Used to load the dataset, clean data, handle missing values and duplicates, and perform exploratory data analysis.
+    
+    \item \textbf{SciPy (\texttt{scipy.stats}):} Used to run statistical tests and check if differences in salary or experience groups are statistically significant.
+    
+    \item \textbf{Matplotlib:} Used to build standard graphs like histograms, box plots, and bar charts to understand trends in the data.
+    
+    \item \textbf{Plotly:} Used to build interactive charts letting users filter data by salary, experience, location, and role.
+    
+    \item \textbf{Plotly Dash:} Used to combine the visual elements into an interactive dashboard for exploring professional trends across India.
+
+    \item \textbf{Tableau:} Used to develop an interactive dashboard for presenting and exploring the findings from the analysis. It will allow users to filter and compare employee experiences across factors such as job role, salary, experience, location, and job satisfaction, making the results easier to interpret and explore.
+    
+    \item \textbf{Jupyter Notebook:} Used during development to document data cleaning steps, code, charts, and findings clearly.
+\end{itemize}
+
+\section*{Specific Help Needed from the Teaching Team}
+
+Guidance on handling missing salary data (about 78\% unlisted): advice on whether to fill missing values or analyze the available salary subset independently to avoid bias.
+
+\end{document}
