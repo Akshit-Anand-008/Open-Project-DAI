@@ -1,0 +1,82 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+\sloppy
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Large \bfseries Checkpoint 1 Report: Project Progress} \\[0.4em]
+    \textbf{Team 23 | Mapping the Indian Data Analyst Job Market}
+\end{center}
+
+\vspace{0.5em}
+
+% --- Section 1: Meta Information ---
+\section*{Section 1: Meta Information}
+
+\begin{itemize}
+    \item \textbf{1. Open Project Title:} Mapping the Indian Data Analyst Job Market
+    \item \textbf{2. Group Number:} 23
+    \item \textbf{3. Mentor Name:} Aakash Gupta (23B0953)
+    \item \textbf{4. Member Names \& Roll Numbers:}
+    \begin{itemize}
+        \item Dev Raj Singh (25B0908)
+        \item Akshit Anand (25B0913)
+        \item Yash Goutharia (25B1004)
+    \end{itemize}
+    \item \textbf{5. GitHub Repository Link:} \\
+        \url{https://github.com/Akshit-Anand-008/Open-Project-DAI.git}
+\end{itemize}
+
+\vspace{0.5em}
+
+% --- Section 2: Progress So Far ---
+\section*{Section 2: Progress So Far}
+
+\subsection*{2.1 Descriptive Statistics of the Dataset}
+\begin{itemize}
+    \item \textbf{Dataset Source:} Kaggle Dataset Repository (\url{https://www.kaggle.com/datasets/ishaqbasha/data-analyst-job-opening-in-india-7th-july-2024})
+    \item \textbf{Dataset Name:} \texttt{dataAnalystJobsIndia\_7th\_July\_2024.csv}
+    \item \textbf{Size \& Dimensions:} 1,561 job records (rows) and 12 columns.
+    \item \textbf{Data Access Permissions:} Public domain / open license dataset.
+    \item \textbf{Key Fields:} Job Title, Company Name, Location, Salary Range, Required Experience, Rating, and Post Date.
+    \item \textbf{Missing Data Summary:} $\sim$78\% of listings do not disclose numerical salary values.
+\end{itemize}
+
+\subsection*{2.2 Data Cleaning Steps Completed}
+\begin{enumerate}
+    \item \textbf{Salary Parsing:} Extracted numerical lower/upper bounds from string fields (e.g., converting \texttt{"8-12 Lacs PA"} into \texttt{min\_salary = 800000} and \texttt{max\_salary = 1200000}).
+    \item \textbf{Experience Normalization:} Extracted minimum and maximum required experience years using regular expressions.
+    \item \textbf{Location Categorization:} Grouped city names into Tier-1 tech hubs (Bengaluru, Hyderabad, Pune, NCR) vs. non-metro cities.
+    \item \textbf{Deduplication \& Hygiene:} Filtered exact duplicates and stripped whitespace from company names and job titles.
+\end{enumerate}
+
+\subsection*{2.3 Division and Revision of Responsibilities}
+\begin{itemize}
+    \item \textbf{Akshit Anand (25B0913):} Exploratory Data Analysis (EDA) and data distribution charts using \texttt{matplotlib} and \texttt{seaborn}.
+    \item \textbf{Yash Goutharia (25B1004):} Statistical hypothesis testing and regression modeling using \texttt{scipy.stats}.
+    \item \textbf{Dev Raj Singh (25B0908):} Interactive dashboarding (\texttt{Tableau} / \texttt{Plotly Dash}) and final report integration.
+\end{itemize}
+
+\subsection*{2.4 Fine-Grained Problem Statement Refinement}
+The project evaluates compensation structures and hiring requirements for Indian Data Analyst roles across tech hubs, experience levels, and company ratings. We address three refined hypotheses:
+\begin{enumerate}
+    \item \textbf{Location Premium ($H_1$):} Tier-1 tech hubs (such as Bengaluru, Hyderabad, and Pune) offer higher base salaries than non-metro cities, even when accounting for experience.
+    \item \textbf{Experience Return ($H_2$):} Salary growth per year of experience slows down significantly after 6 to 7 years.
+    \item \textbf{Platform \& Brand Effect ($H_3$):} Higher company ratings and specialized hiring platforms relate positively to disclosed salaries and higher minimum experience requirements.
+\end{enumerate}
+
+\subsection*{2.5 Updated Tracking Spreadsheet}
+\textbf{Google Sheet Link:}\\
+\url{https://docs.google.com/spreadsheets/d/1wf-e4UMwW0eOMoP4RMkSDTYQT7lU7fUi3SnoRyskhSU/edit?usp=sharing}
+
+\subsection*{2.6 Blockers / Challenges (Help Needed)}
+\begin{itemize}
+    \item \textbf{Missing Salary Data Handling ($\sim$78\% unlisted):} We seek guidance from the Teaching Team on whether to impute missing values or analyze the disclosed salary subset independently to avoid selection bias.
+    \item \textbf{Multi-Location Job Listings:} Handling job postings listing multiple cities (e.g., \texttt{"Bangalore, Mumbai, Remote"}) and standardizing them into primary hub categories.
+\end{itemize}
+
+\end{document}
