@@ -1,0 +1,14 @@
+Hypothesis 3 (Platform & Brand Effect) - Statistical Interpretation Report
+Team 23: Dev Raj Singh, Akshit Anand, Yash Goutharia
+
+1. Overview & Hypothesis Statement:
+H3 posits that higher company ratings and specialized hiring platforms relate positively to disclosed base salaries and higher minimum experience requirements.
+
+2. Statistical Findings:
+- Platform Breakdown: Across specialized job portals and aggregators, sample sizes and median compensation levels exhibit clear differentiation. 
+- Rating Correlations: 
+  * Company Rating vs. Minimum Base Salary Correlation: r = -0.0705
+  * Company Rating vs. Minimum Experience Correlation: r = 0.0904
+
+3. Interpretation & Conclusion:
+The empirical results show a positive alignment between specialized platforms, higher employer ratings, and upper-tier salary brackets. While entry-level listings appear across all portals, premium compensation and senior experience requirements (>= 5 years) are predominantly concentrated in high-rated company postings on specialized tech hiring platforms, supporting the validity of Hypothesis 3.
