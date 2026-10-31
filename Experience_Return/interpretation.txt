@@ -1,0 +1,23 @@
+Interpretations on the testing done:
+1) statistical Relationship between experience and salary
+
+ANOVA F-statistic: 31.6030
+ANOVA p-value: 2.5813e-13
+
+The value 31.6030 of F-statistic is extremely high, meaning the difference in average salaries between these groups is much larger than the natural variation of salaries inside each group.
+Also the p-statistic value is far below the standard significance threshold, indicating there is a statistically significant difference in base salaries across different career stages.
+
+                min_exp	        base_salary
+min_exp	        4.803763	5.948032e+05
+base_salary	594803.227521	4.889521e+11
+
+Direct Covariance between Experience and Salary: 594,803.23
+The covariance is positive indicating both parameters move in the same direction.
+
+2) Analysis of Curve/line after regresssion
+
+Intercept (b0): 244318.01 ± 65997.00
+Slope <= 6.5 (Beta 1): 93728.86 ± 20382.54
+Slope > 6.5 (Beta 2): 569492.65 ± 86034.92
+The regression results show the exact opposite. Salary growth does not slow down; it accelerates dramatically (by a factor of over 6x)
+Takeaway: After the 6-to-7-year mark, professionals transition into highly compensated senior, leadership, or specialized roles where the economic premium on their experience jumps exponentially.
